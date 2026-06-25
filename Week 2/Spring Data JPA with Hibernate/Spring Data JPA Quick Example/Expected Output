@@ -1,0 +1,11 @@
+## Output
+
+```text
+INFO  Inside main
+
+INFO  Start
+
+DEBUG countries=[Country [code=IN, name=India], Country [code=US, name=United States of America]]
+
+INFO  End
+```
