@@ -1,0 +1,6 @@
+->JPA (Java Persistence API) is a specification (JSR 338) used for managing relational data in Java applications.
+->It defines rules for Object Relational Mapping (ORM).
+->It does not provide implementation.
+->Requires providers like Hibernate or EclipseLink.
+
+->JPA = Only rules/blueprint, no implementation.
