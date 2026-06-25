@@ -1,0 +1,23 @@
+->Spring Data JPA is built on top of JPA.
+->It does NOT provide implementation but uses Hibernate internally.
+->It reduces boilerplate code.
+->It automatically manages CRUD operations and transactions.
+
+
+            ->Repository Code
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+}
+
+
+            ->Service Code
+@Service
+public class EmployeeService {
+
+    @Autowired
+    private EmployeeRepository employeeRepository;
+
+    @Transactional
+    public void addEmployee(Employee employee) {
+        employeeRepository.save(employee);
+    }
+}
